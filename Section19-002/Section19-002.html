@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ss19/Section19-002/Section19-002.css">
+    <title>Document</title>
+</head>
+<body onload="renderlist()">
+    <div class="form">
+    <h1>Task Management</h1>
+    <div class="input">
+        <input type="text" placeholder="content" id="content">
+        <input type="date" name="" id="date">
+        <select id="status">
+            <option value="pending">Pending</option>
+            <option value="approve">Approve</option>
+        </select>
+        <input type="text" placeholder="Username" id="username">
+        <button class="submit" onclick="check()">Submit</button>
+        <button class="submit" id="fix_ok">Reset</button>
+    </div>
+    <div class="result">
+        <table id="table">
+            <tr>
+            <th>#</th>
+            <th>Content</th>
+            <th>Due date</th>
+            <th>Status</th>
+            <th>Assigned to</th>
+            <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+    <script src="/ss19/Section19-002/Section19-002.js"></script>
+</body>
+
+</html>
